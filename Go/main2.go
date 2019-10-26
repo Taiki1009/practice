@@ -6,13 +6,10 @@ import (
 	"time"
 )
 
-// 「math/rand」パッケージと「time」パッケージをインポートしてください
 
 func main() {
-	// 指定されたコードを貼り付けてください
 	rand.Seed(time.Now().Unix())
 
-	// for文を作成してください
 	for i := 1; i <= 3; i++ {
 		fmt.Printf("%d回目のおみくじ結果: ", i)
 
