@@ -1,0 +1,37 @@
+リポジトリを作成
+$ git init
+
+ファイルやディレクトリをインデックスに登録
+$ git add <filename>
+
+インデックスに追加されたファイルをコミット
+$ git commit -m "メッセージ"
+
+
+
+ステータス確認
+$ git status
+
+ファイル作成
+$ touch <filename>
+
+コミットログの確認
+$ git log
+
+変更差分を確認
+$ vi <filename>
+
+状態確認
+$ git diff
+
+ワークツリーの確認
+$ git diff HEAD
+
+
+
+ブランチの表示
+$ git branch
+
+
+
+参照元  https://qiita.com/chobi9999/items/6fd6ec12ae60f966ff98
