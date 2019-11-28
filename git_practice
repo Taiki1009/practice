@@ -27,11 +27,12 @@ $ git diff
 ワークツリーの確認
 $ git diff HEAD
 
-
-
 ブランチの表示
 $ git branch
 
 
+
+リモートリポジトリのアドレス
+ https://github.com/Taiki1009/practice.git
 
 参照元  https://qiita.com/chobi9999/items/6fd6ec12ae60f966ff98
