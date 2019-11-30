@@ -1,34 +1,73 @@
+　　　<基本事項>
 リポジトリを作成
 $ git init
 
 ファイルやディレクトリをインデックスに登録
-$ git add <filename>
+$ git add <file-name>
 
 インデックスに追加されたファイルをコミット
 $ git commit -m "メッセージ"
 
+作業ファイルをリポジトリに送信
+$ git push <repository-name> <branch-name>
 
 
-ステータス確認
+　   <リポジトリ>
+リポジトリからコピーして作業
+$ git clone <file-name>
+
+リポジトリの最適化
+$ git gc
+
+他のリポジトリの変更を取得
+$ git pull <取得したいリポジトリのURL>
+
+
+
+     <コミット>
+$ git add <file-name>
+$ git commit -m "message"
+
+直前のコミット取り消し
+$ git reset
+
+コミットにタグ付け
+$ git tag <tag-name>
+
+
+　　　　　<作業ツリー>
+変更ファイルの確認
 $ git status
 
-ファイル作成
-$ touch <filename>
-
-コミットログの確認
-$ git log
-
-変更差分を確認
-$ vi <filename>
-
-状態確認
+ファイルの変更点表示
 $ git diff
 
-ワークツリーの確認
-$ git diff HEAD
+ファイル名変更
+$ git mv <befor-filename> <after-filename>
 
-ブランチの表示
-$ git branch
+コミットログ(履歴)の確認
+$ git log
+
+作業ツリーを指定コミットに戻す
+$ git revert <commit-name>
+
+作業ツリーの状態を一時保管
+$ git stash <save-name or coment>
+
+
+     <ブランチ>
+ブランチの表示 (作成)
+$ git branch (<branch-name>)
+
+ブランチの切り替え
+$ checkout <branch-name>
+
+作業ツリーに別ブランチの変更点を取り込む
+$ git merge <branch-name>
+
+
+
+
 
 
 
