@@ -18,3 +18,12 @@ for(let i=0;i<songs.length;i++){
   paragraph.textContent = addZero(i + 1,2) + '.' + songs[i];
   document.getElementById('list').appendChild(paragraph);
 };
+
+
+//指定した次数(time)小数点以下切り捨て
+let point = function(num, digit) {
+  let time = Math.pow(10, digit);
+	return Math.floor(num * time) / time;
+}
+
+document.getElementById('output').textContent = point(Math.PI, 2);
