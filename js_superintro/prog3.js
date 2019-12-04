@@ -2,21 +2,19 @@ const number1 = 103;
 const number2 = 720;
 const number3 = 189;
 
-// getMax関数を定義してください
+// function(a,b,c) を省略して、 (a,b,c)=> だけで良い
 const getMax = (a, b, c)=>{
   let max = a;
   
-  if(b>max){
+  if(b > max){
     max = b;
-  }else if(c>max){
+  }else if(c > max){
     max = c;
-  }else{
-  }
+  }else{} // 何もしたくない場合はスルー
   
   return max;
 }
 
-// 「最大値は○○です」と出力してください
 // シングルクォーテーションではなく、バッククォーテーション(Shift + @)
 
 let max = getMax(number1, number2, number3);
