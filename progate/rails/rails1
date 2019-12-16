@@ -8,7 +8,7 @@ $ rails server
 ページ生成
 $ rails g controller <controller_name> <action_name>
 
-$ rails g controller home top
+$ rails g controller home top の場合
 
   Viewファイル
     HTMLのようにページの”見た目”を編集
