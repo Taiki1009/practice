@@ -29,4 +29,6 @@ DBについて
 
 HTML全体で共通の内容をまとめる
 views/layouts/application.html.erb
+
+<%= link_to("リンクタイトル","URL") %>: ヘッダーのページリンク
 ファイル内の<%= yield %>に代入されて、ブラウザに表示される
