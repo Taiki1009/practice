@@ -8,12 +8,12 @@
 
 DBについて
   DB作成
-  rails g model Post content:text
+  $ rails g model Post content:text
   テーブル作成
-  rails db:migrate
+  $ rails db:migrate
 
   DBとの接続
-  rails console (ターミナル上)
+  $ rails console 
     データ作成
     post = Post.new(content:"コメント")
     データ保存

@@ -5,6 +5,11 @@
  
 
 <posts_controller.rb>
+  def index
+      #投稿一覧で新しい順にsort
+    @post = Post.all.order(created_at: desc)
+  end
+
   def show
       # paramsでURLから投稿idを取得し、find_byでDBからデータを取得→showで投稿データを使用する
     @post = Post.find_by(id: params[:id])   #投稿詳細: idに合致する画面を表示
@@ -57,8 +62,3 @@
 
 
 
-<posts_controller.rb>
-  #投稿一覧で新しい順にsort
-  def index
-    @post = Post.all.order(created_at: desc)
-  end
