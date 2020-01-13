@@ -41,6 +41,3 @@ $('#language-wrapper').hover(
 );
 
 
-
-//  jQueryの読み込み: <head>内で読み込み、<body>の最下部でstylesheetを読みこむ
-https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js
