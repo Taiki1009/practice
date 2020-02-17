@@ -8,19 +8,22 @@ $ rails server
 ページ生成
 $ rails g controller <controller_name> <action_name>
 
+<controller_name>:どのコントローラーか
+<action_name>    :そこの中の何を返すか
+
 $ rails g controller home top の場合
 
   Viewファイル
-    HTMLのようにページの”見た目”を編集
+    ブラウザに表示するフロント（html）のこと
   ./home/top.html.erb に存在
 
   Controllerファイル
-    リクエストされたViewを見つけ出し、"レスポンスする"
+    リクエストされたViewを持っている場合、ブラウザに返す
   ./controllers/home_controller.erb に存在
   def top end
 
   Routingファイル
-    リクエストされたURLを受け取り、"コントローラとアクションを指示する"
+    リクエストされたURLを受け取り、コントローラーとアクションを指示する
   ./config/routes.rb
   get "home/top" => "home#top" 
 
