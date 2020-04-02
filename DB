@@ -1,0 +1,58 @@
+ターミナル上
+
+DB起動
+$ brew services restart postgresql
+
+psqlというクライアントでDBにアクセス
+$ psql -d postgres
+
+自分で作成したDBに接続
+$ \c myapp
+
+myapp内のDBを表示
+$ \d
+
+
+
+
+usersデーブルを作成
+CREATE TABLE users (
+  id SERIAL NOT NULL PRIMARY KEY ,
+  name VARCHAR( 25 ) NOT NULL ,
+  email VARCHAR( 35 ) NOT NULL ,
+  password VARCHAR( 60 ) NOT NULL ,
+  UNIQUE (email)
+);
+
+postsテーブルを作成
+CREATE TABLE posts (
+    id SERIAL NOT NULL PRIMARY KEY ,
+    user_id INTEGER NOT NULL ,
+    content VARCHAR( 60 ) NOT NULL ,
+    FOREIGN KEY (user_id) references users(id)
+);
+
+
+
+新規データ挿入（usersテーブル）
+INSERT INTO users (name, email, password)
+VALUES ('kinjo', 'kinjo@mail.com','kinjo');
+
+新規データ挿入（postsテーブル）
+INSERT INTO posts (user_id, content)
+VALUES (1,'helloworld');
+
+テーブル、カラム全表示
+SELECT * FROM users;
+
+データ更新
+UPDATE users
+SET name = 'kabi', email = 'kabi@mail.com'
+WHERE id = 1;
+
+データ削除
+DELETE FROM users WHERE id = 2;
+
+
+カラムのデータ型を変更
+ALTER TABLE テーブル名 ALTER COLUMN カラム名 TYPE データ型
