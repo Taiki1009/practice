@@ -2,12 +2,13 @@
 リポジトリを作成
 $ git init
 
+
+
+
 ファイルやディレクトリをインデックスに登録
 $ git add <file-name>
-
 インデックスに追加されたファイルをコミット
 $ git commit -m "メッセージ"
-
 作業ファイルをリポジトリに送信
 $ git push <repository-name> <branch-name>
 
@@ -35,7 +36,7 @@ $ git reset
 $ git tag <tag-name>
 
 
-　　　　　<作業ツリー>
+     <作業ツリー>
 変更ファイルの確認
 $ git status
 
@@ -58,21 +59,40 @@ $ git stash <save-name or coment>
      <ブランチ>
 ブランチの表示 (作成)
 $ git branch (<branch-name>)
-
 ブランチの切り替え
-$ checkout <branch-name>
+$ git checkout <branch-name>
 
 作業ツリーに別ブランチの変更点を取り込む
 $ git merge <branch-name>
 
 
+作業ツリーの内容を保存せずに編集前の状態に戻す  例.誤って削除してしまったファイルを戻す
+$ git checkout -f
 
+
+
+
+リモートリポジトリへの接続
+$ git remote add origin https://github.com/<username>/first_app.git
+$ git push -u origin master
+
+
+
+
+HEROKU
+
+$ heroku login
+$ heroku create
+$ git push heroic master
+$ heroic open
 
 
 
 
 リモートリポジトリのアドレス
  https://github.com/Taiki1009/practice.git
+ https://github.com/Taiki1009/codebase_git.git
+ https://github.com/Taiki1009/CB_techtraining.git
 
 参照元  https://qiita.com/chobi9999/items/6fd6ec12ae60f966ff98
 
