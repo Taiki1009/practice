@@ -1,4 +1,4 @@
-// importすることで、他のファイルで定義したモジュールを利用できる
+　// importすることで、他のファイルで定義したモジュールを利用できる
 // ここでは、dog1とdog2 を ./data/dogData からインポートしている
 import { dog1, dog2 } from "./data/dogData";
 

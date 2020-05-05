@@ -59,6 +59,7 @@ $ git stash <save-name or coment>
      <ブランチ>
 ブランチの表示 (作成)
 $ git branch (<branch-name>)
+
 ブランチの切り替え
 $ git checkout <branch-name>
 
@@ -70,7 +71,11 @@ $ git merge <branch-name>
 $ git checkout -f
 
 
+git initの取り消し
+$ rm -rf .git
 
+リモートリポジトリのURL確認
+$ git remote -v
 
 リモートリポジトリへの接続
 $ git remote add origin https://github.com/<username>/first_app.git
@@ -92,7 +97,7 @@ $ heroic open
 リモートリポジトリのアドレス
  https://github.com/Taiki1009/practice.git
  https://github.com/Taiki1009/codebase_git.git
- https://github.com/Taiki1009/CB_techtraining.git
+ https://github.com/Taiki1009/.git
 
 参照元  https://qiita.com/chobi9999/items/6fd6ec12ae60f966ff98
 
