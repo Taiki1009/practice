@@ -41,7 +41,7 @@ $ git tag <tag-name>
 $ git status
 
 ファイルの変更点表示
-$ git diff
+$ git diff HEAD
 
 ファイル名変更
 $ git mv <befor-filename> <after-filename>

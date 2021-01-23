@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>DeviseApp</title>
+    <title>TweetApp</title>
     <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <header>
+      <div class="header-logo">
+        <%= link_to("TweetApp", "/") %>
+      </div>
+      <ul class="header-menus">
+        <li>
+          <%= link_to("TweetAppとは", "/about") %>
+        </li>
+        <li>
+          <%= link_to("投稿一覧", "/posts/index") %>
+        </li>
+        <li>
+          <%= link_to("新規投稿", "/posts/new") %>
+        </li>
+      </ul>
+    </header>
     <%= yield %>
-       <p class="notice"><%= notice %></p>
-       <p class="alert"><%= alert %></p>
   </body>
 </html>
