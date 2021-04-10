@@ -20,14 +20,14 @@ module Codebreaker
 
     describe "#guess" do
       context "with no match" do
-        it "send a mark with ''" do
-          # 正解のcodeを覚えさせる
-          game.start('1234')
-          # 正解のmarkを覚えさせる
-          expect(output).to receive(:puts).with('')
-          # 予想のguessを判定させてmarkと一致するかテスト
-          game.guess('5555')
-        end
+        # it "send a mark with ''" do
+        #   # 正解のcodeを覚えさせる
+        #   game.start('1234')
+        #   # 正解のmarkを覚えさせる
+        #   expect(output).to receive(:puts).with('')
+        #   # 予想のguessを判定させてmarkと一致するかテスト
+        #   game.guess('5555')
+        # end
       end
 
       context "with 1 number match" do

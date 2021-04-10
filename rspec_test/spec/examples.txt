@@ -1,9 +1,8 @@
 example_id                               | status | run_time        |
 ---------------------------------------- | ------ | --------------- |
-./spec/codebreaker/game_spec.rb[1:1:1]   | passed | 0.00023 seconds |
-./spec/codebreaker/game_spec.rb[1:1:2]   | passed | 0.01458 seconds |
-./spec/codebreaker/game_spec.rb[1:2:1:1] | failed | 8.82 seconds    |
-./spec/codebreaker/game_spec.rb[1:2:2:1] | failed | 1.04 seconds    |
+./spec/codebreaker/game_spec.rb[1:1:1]   | passed | 0.00019 seconds |
+./spec/codebreaker/game_spec.rb[1:1:2]   | passed | 0.00033 seconds |
+./spec/codebreaker/game_spec.rb[1:2:2:1] | failed | 0.01292 seconds |
 ./spec/hello_spec.rb[1:1]                | passed | 0.00055 seconds |
 ./spec/practice2_spec.rb[1:1]            | passed | 0.00054 seconds |
 ./spec/practice2_spec.rb[1:2]            | passed | 0.00007 seconds |
